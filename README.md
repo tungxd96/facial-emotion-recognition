@@ -82,6 +82,23 @@ The input data for emotion classification is stored in the `tests/` folder. To e
     - Maintain a diverse set of images to cover a broad range of emotions and facial expressions.
     - Feel free to add or modify any additional instructions based on your project's specific requirements. This provides users and contributors with clear guidance on how to structure and contribute input data for emotion classification.
 
+#### Train the Model
+
+1. First-Time Training:
+
+    - For first-time users, run the following command in your terminal:
+        ```
+        python3 main.py
+        ```
+    - This command will initiate the training process and save the trained model into a file for future use.
+
+2. Using the Pre-trained Model:
+    - For subsequent runs, you can simply execute:
+        ```
+        python3 main.py
+        ```
+    - This will utilize the pre-trained model to classify your test data without the need for retraining.
+
 ### Result
 
 The accuracy rate based on 12 test images is 92% (11 out of 12). Below is the result of our model:
