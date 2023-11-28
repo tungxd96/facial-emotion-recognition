@@ -48,3 +48,6 @@ Before running the project, ensure you have the following prerequisites:
     python3 main.py
     ```
 
+### License
+
+The project is licensed under [Tung Dinh License](https://github.com/tungxd96/facial-emotion-recognition/blob/main/LICENSE.md)
