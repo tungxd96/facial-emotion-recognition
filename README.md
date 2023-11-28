@@ -82,6 +82,12 @@ The input data for emotion classification is stored in the `tests/` folder. To e
     - Maintain a diverse set of images to cover a broad range of emotions and facial expressions.
     - Feel free to add or modify any additional instructions based on your project's specific requirements. This provides users and contributors with clear guidance on how to structure and contribute input data for emotion classification.
 
+### Result
+
+The accuracy rate based on 12 test images is 92% (11 out of 12). Below is the result of our model:
+
+![Facial Emotion Recognition Result](https://github.com/tungxd96/facial-emotion-recognition/blob/main/results/result_1.png)
+
 ### License
 
 The project is licensed under [Tung Dinh License](https://github.com/tungxd96/facial-emotion-recognition/blob/main/LICENSE.md)
