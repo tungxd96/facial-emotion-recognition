@@ -73,8 +73,6 @@ The input data for emotion classification is stored in the `tests/` folder. To e
     │   ├── image2.png
     │   ├── image3.jpeg
     │   └── ...
-    │
-    ├── other_project_files/
     └── ...
     ```
 3. Notes:
