@@ -35,18 +35,52 @@ Before running the project, ensure you have the following prerequisites:
 
 ### Installation
 
-1. Clone the repository:
+1. Install Python3:
 
-   ```zsh
-   git clone https://github.com/tungxd96/facial-emotion-recognition.git
-   cd facial-emotion-recognition
-   ```
+    Follow the instructions [here](https://www.python.org/downloads/)
 
-2. Run:
+2. Install the dependencies:
 
-    ```zsh
-    python3 main.py
     ```
+    pip install numpy tensorflow scikit-learn dlib matplotlib opencv-python
+    ```
+
+3. Clone the repository:
+
+    ```
+    git clone https://github.com/tungxd96/facial-emotion-recognition.git
+    cd facial-emotion-recognition
+    ```
+
+### Usage
+
+#### Input Data
+
+The input data for emotion classification is stored in the `tests/` folder. To evaluate the model's performance and classify emotions accurately, please add the images you want the model to analyze within this directory.
+
+#### Guidelines for Adding Images
+
+1. File Location:
+    - Place your images in the `tests/` folder.
+2. Supported File Extensions:
+    - Supported image file extensions include `.png`, `.jpg`, and `.jpeg`.
+3. File Structure:
+    ```
+    facial-emotion-recognition/
+    │
+    ├── tests/
+    │   ├── image1.jpg
+    │   ├── image2.png
+    │   ├── image3.jpeg
+    │   └── ...
+    │
+    ├── other_project_files/
+    └── ...
+    ```
+3. Notes:
+    - Ensure that the images accurately represent the scenarios you want the model to handle.
+    - Maintain a diverse set of images to cover a broad range of emotions and facial expressions.
+    - Feel free to add or modify any additional instructions based on your project's specific requirements. This provides users and contributors with clear guidance on how to structure and contribute input data for emotion classification.
 
 ### License
 
