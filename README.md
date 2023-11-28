@@ -10,7 +10,7 @@ Facial Emotion Recognition is a project that aims to detect and recognize facial
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Model Training](#model-training)
+- [Result](#result)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
@@ -82,7 +82,7 @@ The input data for emotion classification is stored in the `tests/` folder. To e
     - Maintain a diverse set of images to cover a broad range of emotions and facial expressions.
     - Feel free to add or modify any additional instructions based on your project's specific requirements. This provides users and contributors with clear guidance on how to structure and contribute input data for emotion classification.
 
-#### Train the Model
+#### Model Training
 
 1. First-Time Training:
 
@@ -105,6 +105,34 @@ The accuracy rate based on 12 test images is 92% (11 out of 12). Below is the re
 
 ![Facial Emotion Recognition Result](https://github.com/tungxd96/facial-emotion-recognition/blob/main/results/result_1.png)
 
+### Contributing
+
+We welcome contributions!
+
 ### License
 
 The project is licensed under [Tung Dinh License](https://github.com/tungxd96/facial-emotion-recognition/blob/main/LICENSE.md)
+
+### Acknowledgments
+
+#### Datasets
+This project uses the **"Random Images for Face Emotion Recognition"** dataset from Kaggle. The dataset was created by Sudarshan Vaidya and can be found at:
+
+[Kaggle - Random Images for Face Emotion Recognition](https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-recognition)
+
+If you use this dataset in your research or work, please cite it appropriately. Here is an example citation:
+
+```plaintext
+@dataset{vaidya2023randomimages,
+  author = {Sudarshan Vaidya},
+  title = {Random Images for Face Emotion Recognition},
+  year = {2023},
+  publisher = {Kaggle},
+  journal = {Kaggle Datasets},
+  howpublished = {\url{https://www.kaggle.com/datasets/sudarshanvaidya/random-images-for-face-emotion-recognition}},
+}
+```
+
+#### Images
+
+The images utilized in this project have been obtained from freely accessible sources on the internet, such as Google, Unsplash, Flickr, and similar platforms where they are made available for download.
