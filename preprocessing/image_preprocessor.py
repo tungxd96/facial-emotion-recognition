@@ -56,17 +56,22 @@ class ImagePreprocessor:
     
     def preprocess_image(self, image_info: tuple) -> tuple:
         label, image_path = image_info
-        gray_face_cropped_image = self.crop_facial_image(image_path=image_path)
+        image = cv2.imread(image_path)
+        gray_face_cropped_image = self.crop_facial_image(image=image)
         resized_image = cv2.resize(gray_face_cropped_image, (128, 128))
         normalized_image = resized_image / 255.0
         return label, np.array(normalized_image)
+    
+    def preprocess_image(self, image: np.ndarray) -> np.ndarray:
+        gray_face_cropped_image = self.crop_facial_image(image=image)
+        resized_image = cv2.resize(gray_face_cropped_image, (128, 128))
+        normalized_image = resized_image / 255.0
+        return np.array(normalized_image)
 
-    def crop_facial_image(self, image_path: str):
+    def crop_facial_image(self, image: str):
         face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
         predictor = dlib.shape_predictor('models/shape_predictor_68_face_landmarks.dat')
-
-        image = cv2.imread(image_path)
 
         resized_image = cv2.resize(image, (900, 900), interpolation=cv2.INTER_AREA)
 
