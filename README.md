@@ -91,6 +91,7 @@ The input data for emotion classification is stored in the `tests/` folder. To e
         python3 main.py
         ```
     - This command will initiate the training process and save the trained model into a file for future use.
+    - *Notes: The number of epochs for this training process is 100. Each epoch takes 3 - 3.5 minutes to complete. The whole training process takes around 5 to 6 hours.*
 
 2. Using the Pre-trained Model:
     - For subsequent runs, you can simply execute:
